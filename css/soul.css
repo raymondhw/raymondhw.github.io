@@ -1,0 +1,432 @@
+body{
+font-family: 'Open Sans', sans-serif;
+margin-top:60px;
+}
+h1{
+font-weight:500;
+text-shadow: 1px 1px 3px #000000;
+}
+h3, p{
+font-weight:500;
+}
+  nav.navbar.navbar-default {
+  min-height: 80px;
+  padding-top: 20px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 4px #969696;
+ 
+}
+
+.navbar-default .navbar-brand {
+  color: #ff0000;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ff0000;
+}
+
+.navbar-default .navbar-text {
+  color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #ffffff;
+  background:#ff0000;
+  border-bottom:5px solid #000000;
+  border-radius:5%;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+  color: black;
+  background-color: #000000;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #000000;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;;
+  
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default {
+  border-color: black;
+}
+
+.navbar-default .navbar-link {
+  color: black;
+}
+
+.navbar-default .navbar-link:hover {
+  color: black;
+}
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+
+
+@media(max-width:767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: black;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: black;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color: black;
+    background-color: #fff;
+  }
+}
+.header-soul{
+
+    background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.6)), url(../images/portland.jpg);
+    background-repeat: none;
+   
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+   
+	color:#ffffff;
+padding-bottom:100px;
+padding-top:100px;
+}
+.header-top{
+margin-top:40px;
+line-height:120%;
+}
+.scroll-more .btn{
+background:#ffffff;
+color:#000000;;
+font-size:25px;
+font-weight:600;
+margin-top:15px;
+padding: 10px 12px 10px 12px;
+
+}
+.more{
+text-align:center;
+padding-top:80px;
+padding-bottom:80px;
+background:#000000;
+color:#ffffff;
+}
+.benefits{
+line-height:130%;
+}
+#play{
+margin: 0 auto;
+margin-top:30px;
+-moz-box-shadow: 0 0 6px #ffffff;
+-webkit-box-shadow: 0 0 6px #ffffff;
+box-shadow: 0 0 6px #ffffff;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #ff0000;
+}
+.features{
+text-align:center;
+padding-top:70px;
+padding-bottom:70px;
+}
+.feature-space{
+margin-bottom:60px;
+}
+.feature-box{
+margin-bottom:20px;
+}
+.owl-pagination .owl-page span {
+    background-color: white;
+}
+.owl-pagination .owl-page .active span
+{
+    background-color: aqua;
+}
+.fa-android,.fa-map-marker,.fa-utensils,.fa-bell,.fa-map,.fa-phone{
+color:red;
+margin-top:10px;
+}
+.get-the-bag{
+padding-top:70px;
+padding-bottom:70px;
+}
+.travel-section{
+color:#ffffff;
+text-align:center;
+background:#000000;
+padding-top:70px;
+padding-bottom:70px;
+
+}
+.touch{
+margin-bottom:15px;
+}
+.peps-space{
+margin-bottom:70px;
+line-height:130%;
+}
+#owl-easy .item{
+  margin: 3px;
+}
+#owl-easy .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.price{
+text-align:center;
+
+}
+
+	/*PRICES*/
+.price-padding{
+  margin-bottom:80px;
+}
+.pricing{
+  padding:80px 0px 80px 0px;
+}
+#player{
+height:200px;
+width:200px;
+margin:0 auto;
+margin-top:30px;
+}
+			.panel.price,
+		.panel.price>.panel-heading{
+			border-radius:0px;
+			 -moz-transition: all .3s ease;
+			-o-transition:  all .3s ease;
+			-webkit-transition:  all .3s ease;
+		}
+		.panel.price:hover{
+			box-shadow: 0px 0px 30px rgba(255,0,0, .9);
+		}
+		.panel.price:hover>.panel-heading{
+			box-shadow: 0px 0px 30px rgba(255,0,0, .2) inset;
+		}
+		
+				
+		.panel.price>.panel-heading{
+			box-shadow: 0px 5px 0px rgba(50,50,50, .2) inset;
+			text-shadow:0px 3px 0px rgba(50,50,50, .6);
+		}
+			
+		.price .list-group-item{
+			border-bottom-:1px solid rgba(250,250,250, .5);
+		}
+		
+		.panel.price .list-group-item:last-child {
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+		.panel.price .list-group-item:first-child {
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+		}
+		
+		.price .panel-footer {
+			color: #fff;
+			border-bottom:0px;
+			background-color:  rgba(255,0,0, .9);
+			box-shadow: 0px 3px 0px rgba(0,0,0, .3);
+		}
+		
+		
+		.panel.price .btn{
+			box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+			border:0px;
+			background:#000000;
+			color:#ffffff;
+			
+		}
+	
+		.price.panel-white>.panel-heading {
+			color: #ffffff;
+			background-color: #000000;
+			border-color: #000000;
+			border-bottom: 1px solid #000000;
+			
+		}
+		
+		.panel.panel-white.price:hover>.panel-heading{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .05) inset;
+		}
+			
+		.price.panel-white>.panel-body {
+			color: #fff;
+			background-color: #ff0000;
+		}
+				
+		.price.panel-white>.panel-body .lead{
+				
+				color:#ffffff;
+		}
+		
+		.price:hover.panel-white>.panel-body .lead{
+				text-shadow: 0px 2px 0px rgba(250,250,250, .9);
+				color:#ffffff;
+		}
+		
+		.price.panel-white .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		#nego{
+		margin-bottom:40px;
+		}
+		.contact{
+		 background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.6)), url(../images/portlandtown.jpg);
+    background-repeat: none;
+   background-attachment:fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+		color:#ffffff;
+		padding-top:100px;
+		padding-bottom:100px;
+		text-shadow: 1px 1px 3px #000000;
+		
+		}
+		.slider{
+		background:red;
+		}
+		.contact ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		}
+		
+		.contact a{
+		color:#ffffff;
+		}
+		
+		.message{
+		font-family: 'Indie Flower', cursive;
+		}
+		.travel-section .btn{
+		color:#ffffff;
+		background-color:red;
+		border:3px solid #ffffff;
+		padding:20px;
+		font-size:20px;
+		margin-bottom:15px;
+		}
+		.contact-fix{
+	    text-shadow: 1px 1px 3px #000000;
+		text-align:center;
+		margin-bottom:60px;
+		
+		}
+		.footer{
+		 background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.6)), url(../images/bbqfooter.jpg);
+		 
+    background-repeat: none;
+   background-attachment:fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	text-align:center;
+		color:#ffffff;
+		padding-top:100px;
+		padding-bottom:100px;
+		}
+		.eat-with{
+		text-shadow: 1px 1px 3px #000000;
+		}
+		
+		#map{
+		width:100%;
+		height:500px;
+		}
+		table{
+		color:#000000;
+		margin:0 auto;
+		margin-bottom:15px;
+		}
+		table td.damit{
+		color:#ffffff;
+		font-weight:600;
+		}
+		
+		.change{
+		color:#ffffff;
+		}
+	   
+		.paypal_btn{
+		 box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+			border:0px;
+			background:#000000;
+			color:#ffffff;
+			font-weight:600;
+			font-size:20px;
+			margin-bottom:10px;
+			
+			
+			padding-top:12px;
+			padding-bottom:12px;
+		}
+		
+		.paypal_btn:hover{
+		background-color: #012169;
+  color:#009cde;
+  border: 2px solid #009cde;
+ 
+  transition: background .3s;
+}
+		.inline{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		
+		}
+		
+		.inline li{
+		display:inline;
+		}

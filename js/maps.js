@@ -1,0 +1,2 @@
+
+google.maps.event.addDomListener(window,'load',init);function init(){var mapOptions={zoom:13,center:new google.maps.LatLng(44.9329915,-123.0282074,11),disableDefaultUI:true,scrollwheel:false,draggable:true,  styles: [{"featureType":"all","elementType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}]};var mapElement=document.getElementById('map');var map=new google.maps.Map(mapElement,mapOptions);var myLatLng=new google.maps.LatLng(44.9329915,-123.0282074,11);var beachMarker=new google.maps.Marker({position:myLatLng,map:map,icon:image})}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is an advanced tutorial on how to make an android chat application.">
+	<meta name="keywords" content="website developer, website designer, salem oregon web designer, web coding, website builder, custom web design, web solutions, web consulting, chat,">
+    <meta name="author" content="Raymond">
+	<meta name="robots" content="nofollow">
+	
+	<meta property="og:title" content="HOW TO MAKE AN ANDROID CHAT APPLICATION">
+    <meta property="og:description" content="This is an advanced tutorial on how to make an android chat application.">
+    <meta property="og:image" content="https://raymondhw.github.io/images/firebase.jpg">
+    <meta property="og:url" content="https://raymondhw.github.io/android-chat-application.html">
+
+    <title>HOW TO MAKE AN ANDROID CHAT APPLICATION</title>
+    <link rel="icon" type="image/png" href="images/metwo.png" />
+    <!-- Bootstrap Core CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<script src="https://use.fontawesome.com/a9e85bc0d4.js"></script>
+	
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+  
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67302207-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="top-page">
+<div id="load_screen">
+<div id="loading">RAYMOND LOADING..........
+
+ <div class="progress">
+ <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+ <span class="sr-only">1% Complete</span>
+                          
+  </div>
+ </div>
+</div>
+
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<div class="page-scroll">
+                <a class="navbar-brand" href="index.html"><img class="img-responsive pull-left" src="images/me.png" id="logo">RAYMOND</a>
+            </div>
+			</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="tutorials.html">Tutorials</a>
+                    </li>
+                   
+					<li>
+                        <a><p class="start-info"><i class="fa fa-phone" aria-hidden="true"></i> 503-420-8196</p></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+       
+	   
+	   
+	    
+	   
+	   
+	 <div class="blog-post">
+	     <div class="container">
+		     <div class="row">
+			     <div class="col-md-12">
+				 
+				     <h1>HOW TO MAKE AN ANDROID CHAT APPLICATION USING APP INVENTOR AND GOOGLE FIREBASE DATABASE</h1>
+					 <h2><i class="fa fa-calendar-check-o" aria-hidden="true"></i> MAY 25 2018</h2>
+					 <br>
+					 <img class="img-responsive" src="images/firebase.jpg">
+					 <br>
+					 <p>Have you ever wondered how chat applications are made? Today is your lucky day because I'm going to teach you how to create one!
+					 In order for us to make a realtime chat application we are going to need to store data into a database, and then we are going to retrieve that data.
+					 That's how a chat applicaton works, we push and pull data from a database.</p>
+					 <p>First, you'll need to sign up for a google firebase account. Next, create a new project, once you enter your database right above it you will see your firebase url, copy and save that.
+					 Next, go to your firebase settings and copy and save your firebase project web api key. Thats it, you are done.</p>
+					 <br>
+					 <img class="img-responsive" src="images/signupfirebase.jpg">
+					 <br>
+					 
+					 
+					 
+					 <p>Next, head over to the app inventor and create a new project. After you have created a new project, let's get started on laying out our components we are going to need.
+					 First we will need a vertical arrangement, set this vertical arrangement to height = fill parent and width = fill parent.
+					 Now, grab a horizontal arrangement and put it inside the vertical arrangemet and make the width = fill parent. Inside the horizontal arrangemet add a textbox. 
+					 I want you to rename the textbox to Handletextbox. Next to the Handletextbox I want you to add a textlabel and let's rename it to Handlelabel.
+					 Ok, if you have done this correctly your app should look something like this.</p>
+					 <br>
+					 <img class="img-responsive" src="images/inventone.jpg">
+					 <br>
+					 <p>Next, I want you to add a verticalscrollarrangement underneath the horizontal arrangement. Set the width = fill parent and set the height to = fill parent. 
+					 Inside of this I want you to add a textlabel. Rename the textlabel to DataTextLabel. Yes, the data we push and pull from the firebase database will come through this lable.
+					 Next, I want you to add another vertical arrangement underneath the veticalscrollarrangement and set the width = fill parent. Inside the 
+					 vertical arrangement add a textbox and rename it MessageTextbox. Set the height to 80 pixels and set the width = fill parent. For this component check the multiline checkbox.
+					 Next, I want you to add a horizontal arrangement in the vertical arrangement underneath the MessageTextbox. Inside the horizontal arrangement I want you to add
+					 a textlabel, button, textlabel, button, textlabel in that order! I want you to set all three labels width = 1 pixel and height = fill parent and set the background
+					 to all three textlabels to the color white. Erase all the text to these three textlabels. We did this to add padding to the two buttons we added so they are not sticking together.
+					 Now set each buttons width = fill parent. Change the name of the first button to Messagebutton and change the name of the second button to ClearMessage. Now change 
+					 the text of the first button to Send Message and change the text of the second button to Clear Messages. Now we need to add a few more components to make all of this work. We
+					 will need a notifier component, a clock component, a firebase component, and a sound component. For your firebase component do your remember the project url and api key you saved.
+					 if so put them here.  <img class="img-responsive" src="images/fireurl.jpg"> This will connect your app to the firebase database. For the sound component upload your
+					 own mp3 notification sound that's about one second long. I used a star trek computer notification sound!!! The easy part is over, This is how your app interface should look now.
+					 </p>
+					 <img class="img-responsive" src="images/finish.jpg">
+					 <br>
+					 <p>Click the blocks button and let's hack all these things together! We will start by creating four variables, userid, time, handle, and message.
+					 Your blocks should look like this.</p>
+					 <img class="img-responsive" src="images/blocksone.jpg">
+					 <br>
+					 <p>Now we create a function called sendData, but in app inventor we call it a procedure. We are going to set the userid varible to your phone system time. This will give  
+					 users a unique ID so google firebase doesn't overide the data. We are going to set the time to your phones clock, this is optional. Next set the handle variable to Handletextbox, 
+					 set message to MessageTextbox. Now we need to store all those variables into the firebase database. We need three firebase store value blocks. We set our userid variable
+					 to each tag. Then we store value to store time, handle and message variables. After the user clicks the button to store the data we want to set the Handletextbox visible to false
+					 and set MessageTextbox text to an empty textstring to clear the sent message. The last thing we need to do to our function/procedure is to hide the keyboard.
+					 Your code should look like this.</p>
+					 <br>
+					 <img class="img-responsive" src="images/procedure.jpg">
+					 
+					 <p>Now we grab a firebase datachanged block to return the data you entered instantly. This will also change instantly for all the other users. Set the 
+					 DataTextLabel to join a text string block. You will need three text strings. Set the first text string to DataTextLabel Text. Set the second text string to two \n\n. This means
+					 you are going to store each value you are returning to a new line. When you use two of these you are also giving some extra space inbetween those new lines so it's readable. 
+					 On the last text string store the datachanged value into it. Your blocks should look like this.</p>
+					 <img class="img-responsive" src="images/datachange.jpg">
+					 <p>Lastly, we need to program our last two buttons. The Send Message button needs to be validated to ensure each textbox inputs actually have text before the data is sent to the firebase database.
+					 Grab the message button on click, then grab a if else block. Grab two equal blocks from the logic section. We also need two empty text strings. Snap the equals text block into the 
+					 if else block, then snap the Handletextbox text into the first empty slot. Then snap the empty string inside the second empty slot. We are telling the computer if this textbox is not
+					 empty then run this function/procedure. If it is empty we want to call the notifier and tell the user to put information into the inputs. For the else put in a show alert from the notifier 
+					 component and type in whatever you want to tell the user of the app. Do this twice for both textboxes. Next grab the Clear Message on click block and put in the DataTextLabel Text and 
+					 set it to a empty string. This will clear all the messages once the button is clicked. This will only clear messages from the app and not the database. You can program a master app
+					 to delete data from the database from the app. Otherwise, you need to delete the data from the database manually. This is what your blocks should look like.</p>
+					 <img class="img-responsive" src="images/if.jpg">
+					 <br>
+					 <img class="img-responsive" src="images/cleardata.jpg">
+					 <p>All done, now lets test out our chat application!</p>
+					 <img class="img-responsive" src="images/firstmsg.png">
+					 <br>
+					 <img class="img-responsive" src="images/secondmsg.png">
+					 <br>
+					 <img class="img-responsive" src="images/proof.jpg">
+					 <br>
+					 <p>If you close the chat application and reopen it you will lose your user name and will have to re-enter it. To avoid this you can save the user name to your phones memory using the tinyDB component.
+					 Just save the variable name to the tinyDB right underneath the name variable.</p>
+					 <br>
+					 <img class="img-responsive" src="images/tinydb.jpg">
+					 <br>
+					 <p>Now go to your screen component and grab a when screen initalizes block and set HandleTextbox Text to get TinyDb get value tag to what is holding the name variable.
+					 Now when your users open and close the app they will always have the same user name unless they decide to change it.
+					 </p>
+					 <br>
+					 <img class="img-responsive" src="images/screenname.jpg">
+					 <p>One more thing, in the database photo you can see that my security rules are set to public and that anyone can read and write to my database. The only way that anyone can do this is if 
+					  you give them your database url which is the part I blacked out. A bored code ninja can get it with very little effort which normally doesnt happen. To avoid taking the chance you can authenticate
+					  your database.
+					 </p>
+					 
+					 
+				
+				</div>
+			 </div>
+		 </div>
+	 </div>
+
+		
+              <div class="footer-section">
+				    <div class="container">
+				         <div class="row">
+				           <div class="col-md-3 pd">
+						  
+ 						   <h4>My Info</h4>
+						   <p><i class="fa fa-map-marker" aria-hidden="true"> Salem, Oregon</i></p>
+						   <p><i class="fa fa-phone" aria-hidden="true"> 503-420-8196</i></p>
+						   <p class="mail"><a href="mailto:jay503cool@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"> yourtechguy503@gmail.com</i></a></p>
+						   </div>
+				           
+						   <div class="col-md-3 pd">
+						   
+						   <h4>Find Me Here</h4>
+						   
+						   <div class="social-container">
+                           <ul class="list-inline social-list">
+                            
+                           <li class="social-item"><a href="https://www.freecodecamp.com/ray503"  target="_blank">
+                           <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-fire fa-stack-1x"></i>
+                           </span>
+                           </a>
+                           </li>
+						   
+						  
+                            
+                           <li class="social-item"><a href="https://github.com/raymondhw"  target="_blank">
+                           <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github-alt fa-stack-1x"></i>
+                           </span>
+                           </a>
+                           </li>
+                            
+                           <li class="social-item"><a href="https://www.linkedin.com/in/raymond-white-295b78119" target="_blank">
+                           <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-linkedin fa-stack-1x"></i>
+                           </span>
+                           </a>
+                           </li>
+						  
+						   <li class="social-item"><a href="http://codepen.io/ray503/full/LNMWYW/" target="_blank">
+                           <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-codepen fa-stack-1x"></i>
+                           </span>
+                           </a>
+                           </li>
+                           
+                           </ul>
+                         
+						   </div>
+							
+						   </div>
+						  
+						   <div class="col-md-3 pd">
+						   <h4>Try my portfolio app!</h4>
+						  
+						    <a href="https://play.google.com/store/apps/details?id=appinventor.ai_jay503cool.Raymond&hl=en" target="_blank"><img src="images/google-play-badge.png" id="mummy-money" class="img-responsive" title="QR SCAN" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<img src='images/qrcode.38988965.png'>" data-html="true" alt=""></a>
+						  
+						   
+						   </div>
+						  
+						   <div class="col-md-3 pd">
+						   <h4 class="footerh4">More Projects</h4>
+                           
+						   <ul class="list-inline f2-work">
+                           
+						   <li><a href="http://codepen.io/ray503/full/oLOdqE/" target="_blank"><img src="images/dogwalkpen.png" class="img-responsive"></a></li>
+                           <li><a href="http://codepen.io/ray503/full/JRxNzO/" target="_blank"><img src="images/business.jpg" class="img-responsive"></a></li>
+                           <li><a href="http://codepen.io/ray503/full/zKGEwb/" target="_blank"><img src="images/movepen.jpg" class="img-responsive"></a></li>
+                           
+                           <li><a href="http://codepen.io/ray503/full/YGwmkY/" target="_blank"><img src="images/marks.jpg" class="img-responsive"></a></li>    
+                           <li><a href="http://codepen.io/ray503/full/JbJoQY/" target="_blank"><img src="images/tony.jpg" class="img-responsive"></a></li>
+						   <li><a href="http://codepen.io/ray503/full/dXGrjL/" target="_blank"><img src="images/webexamples.png" class="img-responsive"></a></li>  
+                           </ul>
+						 
+						  
+						   </div>
+						  
+						   <p class="avatar text-center">Avatar created by <a href="https://pickaface.net/" target="_blank"> pickaface.net</a></p>
+						   <p class="text-center">Copyright &copy; Raymond White 2016</p>
+						  
+						   </div>
+				       </div>
+				   </div>
+			   </div>
+			   
+			  
+   
+			 
+			
+  
+  
+  	
+   <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+	
+	
+      
+	  <script src="js/custom.js"></script> 
+	  
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+	
+	
+	
+<script>
+
+
+</script> 
+</body>
+
+</html>
