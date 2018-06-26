@@ -108,7 +108,7 @@
 				     <h1>HOW TO MAKE AN ANDROID CHAT APPLICATION USING APP INVENTOR AND GOOGLE FIREBASE DATABASE</h1>
 					 <h2><i class="fa fa-calendar-check-o" aria-hidden="true"></i> MAY 25 2018</h2>
 					 <br>
-					 <img class="img-responsive" src="images/firebase.jpg">
+					 <img class="img-responsive" src="images/firebase.JPG">
 					 <br>
 					 <p>Have you ever wondered how chat applications are made? Today is your lucky day because I'm going to teach you how to create one!
 					 In order for us to make a realtime chat application we are going to need to store data into a database, and then we are going to retrieve that data.
@@ -116,7 +116,7 @@
 					 <p>First, you'll need to sign up for a google firebase account. Next, create a new project, once you enter your database right above it you will see your firebase url, copy and save that.
 					 Next, go to your firebase settings and copy and save your firebase project web api key. Thats it, you are done.</p>
 					 <br>
-					 <img class="img-responsive" src="images/signupfirebase.jpg">
+					 <img class="img-responsive" src="images/signupfirebase.JPG">
 					 <br>
 					 
 					 
@@ -127,7 +127,7 @@
 					 I want you to rename the textbox to Handletextbox. Next to the Handletextbox I want you to add a textlabel and let's rename it to Handlelabel.
 					 Ok, if you have done this correctly your app should look something like this.</p>
 					 <br>
-					 <img class="img-responsive" src="images/inventone.jpg">
+					 <img class="img-responsive" src="images/inventone.JPG">
 					 <br>
 					 <p>Next, I want you to add a verticalscrollarrangement underneath the horizontal arrangement. Set the width = fill parent and set the height to = fill parent. 
 					 Inside of this I want you to add a textlabel. Rename the textlabel to DataTextLabel. Yes, the data we push and pull from the firebase database will come through this lable.
@@ -142,11 +142,11 @@
 					 if so put them here.  <img class="img-responsive" src="images/fireurl.jpg"> This will connect your app to the firebase database. For the sound component upload your
 					 own mp3 notification sound that's about one second long. I used a star trek computer notification sound!!! The easy part is over, This is how your app interface should look now.
 					 </p>
-					 <img class="img-responsive" src="images/finish.jpg">
+					 <img class="img-responsive" src="images/finish.JPG">
 					 <br>
 					 <p>Click the blocks button and let's hack all these things together! We will start by creating four variables, userid, time, handle, and message.
 					 Your blocks should look like this.</p>
-					 <img class="img-responsive" src="images/blocksone.jpg">
+					 <img class="img-responsive" src="images/blocksone.JPG">
 					 <br>
 					 <p>Now we create a function called sendData, but in app inventor we call it a procedure. We are going to set the userid varible to your phone system time. This will give  
 					 users a unique ID so google firebase doesn't overide the data. We are going to set the time to your phones clock, this is optional. Next set the handle variable to Handletextbox, 
@@ -155,13 +155,13 @@
 					 and set MessageTextbox text to an empty textstring to clear the sent message. The last thing we need to do to our function/procedure is to hide the keyboard.
 					 Your code should look like this.</p>
 					 <br>
-					 <img class="img-responsive" src="images/procedure.jpg">
+					 <img class="img-responsive" src="images/procedure.JPG">
 					 
 					 <p>Now we grab a firebase datachanged block to return the data you entered instantly. This will also change instantly for all the other users. Set the 
 					 DataTextLabel to join a text string block. You will need three text strings. Set the first text string to DataTextLabel Text. Set the second text string to two \n\n. This means
 					 you are going to store each value you are returning to a new line. When you use two of these you are also giving some extra space inbetween those new lines so it's readable. 
 					 On the last text string store the datachanged value into it. Your blocks should look like this.</p>
-					 <img class="img-responsive" src="images/datachange.jpg">
+					 <img class="img-responsive" src="images/datachange.JPG">
 					 <p>Lastly, we need to program our last two buttons. The Send Message button needs to be validated to ensure each textbox inputs actually have text before the data is sent to the firebase database.
 					 Grab the message button on click, then grab a if else block. Grab two equal blocks from the logic section. We also need two empty text strings. Snap the equals text block into the 
 					 if else block, then snap the Handletextbox text into the first empty slot. Then snap the empty string inside the second empty slot. We are telling the computer if this textbox is not
@@ -169,9 +169,9 @@
 					 component and type in whatever you want to tell the user of the app. Do this twice for both textboxes. Next grab the Clear Message on click block and put in the DataTextLabel Text and 
 					 set it to a empty string. This will clear all the messages once the button is clicked. This will only clear messages from the app and not the database. You can program a master app
 					 to delete data from the database from the app. Otherwise, you need to delete the data from the database manually. This is what your blocks should look like.</p>
-					 <img class="img-responsive" src="images/if.jpg">
+					 <img class="img-responsive" src="images/if.JPG">
 					 <br>
-					 <img class="img-responsive" src="images/cleardata.jpg">
+					 <img class="img-responsive" src="images/cleardata.JPG">
 					 <p>All done, now lets test out our chat application!</p>
 					 <img class="img-responsive" src="images/firstmsg.png">
 					 <br>
@@ -182,13 +182,13 @@
 					 <p>If you close the chat application and reopen it you will lose your user name and will have to re-enter it. To avoid this you can save the user name to your phones memory using the tinyDB component.
 					 Just save the variable name to the tinyDB right underneath the name variable.</p>
 					 <br>
-					 <img class="img-responsive" src="images/tinydb.jpg">
+					 <img class="img-responsive" src="images/tinydb.JPG">
 					 <br>
 					 <p>Now go to your screen component and grab a when screen initalizes block and set HandleTextbox Text to get TinyDb get value tag to what is holding the name variable.
 					 Now when your users open and close the app they will always have the same user name unless they decide to change it.
 					 </p>
 					 <br>
-					 <img class="img-responsive" src="images/screenname.jpg">
+					 <img class="img-responsive" src="images/screenname.JPG">
 					 <p>One more thing, in the database photo you can see that my security rules are set to public and that anyone can read and write to my database. The only way that anyone can do this is if 
 					  you give them your database url which is the part I blacked out. A bored code ninja can get it with very little effort which normally doesnt happen. To avoid taking the chance you can authenticate
 					  your database.
