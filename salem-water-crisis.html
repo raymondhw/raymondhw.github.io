@@ -119,39 +119,39 @@
 					 That's because the goal of this app is to use the addresses of the locations and connect them to the phone's location sensor and current addreess to give the user precise directions to the water distribution locations. By doing it this way, I can
 					 change all the data when the city switches locations without the user of the app doing anything. All the user has to do is open the app, turn on their location services and go.
 					 </p>
-					 <img class="img-responsive" src="images/waterdata.jpg">
+					 <img class="img-responsive" src="images/waterdata.JPG">
 					 <br>
 					 <p>Next, we need to pull every list string from our firebase database. We do this by using a when screen initalizes block and we need a firebase get tag list.
 					 </p> 
-					 <img class="img-responsive" src="images/gettaglist.jpg">
+					 <img class="img-responsive" src="images/gettaglist.JPG">
 					 <p>Now, we need the when firebase taglist block and a for each item in list block and a firebase get value block. The firebase when taglist list block means when we recieve the taglist do what next. So next, we want to attach the for each item in taglist list block and attach the taglist value to it.
 					 After that, we want to attach the get firebase value block and put the item from the for each block into the tag slot. The item is our string data we wrote. Voila, now we have access to all the string data we wrote into the firebase database. Now, we need to seperate that data to do what we want with it.
 					 </p>
-					 <img class="img-responsive" src="images/whentaglist.jpg">
+					 <img class="img-responsive" src="images/whentaglist.JPG">
 					 <p>Now, we need to create a variable with an empty list to put our data into.
 					 </p>
-					 <img class="img-responsive" src="images/watervariable.jpg">
+					 <img class="img-responsive" src="images/watervariable.JPG">
 					 <p>Next, we need a firebase got value block and an add items to list block. Snap those two together which are pretty self explantory. Now, we want to add the items from the firebase database to the water locations empty list. Set the item to the firebase value.
 					 </p>
-					 <img class="img-responsive" src="images/watervalue.jpg">
+					 <img class="img-responsive" src="images/watervalue.JPG">
 					 <p>Now, we need to create three more variables to seperate our data.
 					 </p>
-					 <img class="img-responsive" src="images/variablesfordata.jpg">
+					 <img class="img-responsive" src="images/variablesfordata.JPG">
 					 <p>The first variable will hold the first string location name, the second variable will hold info, the third variable will hold address. So, the first string will be index 1, the second string will be index 2, the third string will be index 3.
 					 </p>
-					 <img class="img-responsive" src="images/stringexample.jpg">
+					 <img class="img-responsive" src="images/stringexample.JPG">
 					 <p>Now, we need three select items from list blocks and add them to our variables and connect each value to each and index 1-3 like I explained above. Your blocks should look like this.
 					 </p>
-					 <img class="img-responsive" src="images/addvariablestring.jpg">
+					 <img class="img-responsive" src="images/addvariablestring.JPG">
 					 <p>Now, we need to create three more variables and connect all three to create empty list. Do you see where this is going! The first varible name should be locationNameIndex, the second variable should be named infoIndex, the third variable should be addressIndex.
 					 </p>
-					 <img class="img-responsive" src="images/threemoreindexvariables.jpg">
+					 <img class="img-responsive" src="images/threemoreindexvariables.JPG">
 					 <p>Now, we need three add items to list blocks. We are going to add location name to locationNameIndex empty list variable. For the item we are going to add locationName variable. Repeat this for the rest of them. Your blocks should look like this.
 					 </p>
-					 <img class="img-responsive" src="images/finishthisshit.jpg">
+					 <img class="img-responsive" src="images/finishthisshit.JPG">
 					 <p>Now, we are all finished, we can now use the data as we please. I used a list picker since we are using list data. You can check out screen shots of my app below. Also here is an example of how I used a go there button with the address data.
 					 </p>
-					 <img class="img-responsive" src="images/buttonlocation.jpg">
+					 <img class="img-responsive" src="images/buttonlocation.JPG">
 					 <br>
 					
 				     </div>
