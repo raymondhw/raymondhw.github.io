@@ -755,6 +755,10 @@ background-color:#000000;
 padding-top:50px;
 padding-bottom: 50px;
 }
+.payment a{
+color:#ffffff;
+}
+
 .pd{
 margin-bottom:30px;
 }
