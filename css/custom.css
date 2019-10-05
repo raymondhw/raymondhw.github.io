@@ -887,23 +887,27 @@ padding-bottom:100px;
 padding-top:70px;
 padding-bottom:70px;
 }
-.blog-list ul{
-list-style-type: none;
-}
-.blog-list li a{
+
+.blog-list a{
 text-decoration:none;
-color:black;
-font-weight:600;
+color:#000000;
 }
-.shadow-boxit{
-padding:5px;
-display:inline-block;
+
+
+
+.blog-card{
+padding:20px;
+margin-bottom:15px;
 border:1px solid black;
+border-radius:15px;
 -moz-box-shadow: 0 0 3px #000000;
 -webkit-box-shadow: 0 0 3px #000000;
 box-shadow: 0 0 3px #000000;
 }
-
+.blog-card p{
+font-weight:600;
+line-height:1.6;
+}
 
 .blog-post{
 padding-top:70px;
