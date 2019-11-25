@@ -1,0 +1,35 @@
+/
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+ 
+  height: 100vh;
+ position:relative;
+ 
+text-align: center;
+  background-color: #3498db;
+  background-image: url('');
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
