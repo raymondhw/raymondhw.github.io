@@ -130,12 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
    
 }
-.start-info{
-  color:#000000;
- 
-  font-size:18px;
- 
-}
+
 
 #logo{
 position:relative;
@@ -340,8 +335,13 @@ textarea {
 }
 
 .i-am{
+
+
+padding-top:100px;
+padding-bottom: 100px;
 color:#ffffff;
- 
+ text-align: center;
+  background-color: #3498db;
 text-align: center;
 
 
@@ -349,13 +349,8 @@ text-align: center;
 
 
 
-.box-pos{
 
-position:absolute;
-top:100px;
- color:#ffffff;
 
-}
 
 
 #pretty {
